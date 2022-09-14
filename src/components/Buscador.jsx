@@ -29,24 +29,26 @@ function Buscador() {
 
   return (
     <div className="container">
-      <div className="box first">
+      <div className="box cep-input-box">
         <input
           type="text"
           placeholder="00000-000"
           value={ input }
           onChange={ (e) => setInput(e.target.value) }
           maxLength={ 8 }
+          data-testid="cep-input"
         />
         <button
           className="button is-dark"
           type="button"
           onClick={ handleClick }
+          data-testid="answer-box"
         >
           Buscar CEP
         </button>
       </div>
       {Object.keys(data).length > 0 && (
-      <div className="box second">
+      <div className="box answer-box" data-testid="answer-box">
         <span> <strong>CEP:</strong> { data.cep }</span>
         <span> <strong>Estado:</strong> { data.uf }</span>
         <span> <strong>Cidade:</strong> { data.localidade }</span>

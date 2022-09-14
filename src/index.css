@@ -29,7 +29,7 @@ body {
   margin-left: 32%;
 }
 
-.first {
+.cep-input-box {
   display: flex;
   justify-content: center;
   width: 500px;
@@ -43,7 +43,7 @@ strong {
   margin-left: 5px;
 }
 
-.second {
+.answer-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
